@@ -5,7 +5,7 @@
     padding: 60px 0;
 }
 
-.footer-logo {
+.footer__logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -15,18 +15,52 @@
     color: var(--secondary-text-color);
 }
 
-.footer_contacts {
+.footer__contacts {
     flex-grow: 1;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
-.join {
+
+/* Address  */
+
+.footer__address {
+    margin-top: 20px;
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.address__item + .address__item {
+    margin-top: 9px;
+}
+
+.footer__address a {
+    font-style: normal;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__link-white {
+    color: var(--secondary-text-color);
+}
+// =========Join===============
+.footer__join {
     margin-left: 70px;
 }
-.join-title {
+.join__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -35,15 +69,15 @@
 
     color: var(--secondary-text-color);
 }
-.join-list {
+.join__list {
     display: flex;
     margin-top: 20px;
 }
-.join-list-item + .join-list-item {
+.join__list-item + .join__list-item {
     margin-left: 10px;
 }
 
-.join-list-item {
+.join__list-item {
     font-size: 0;
     display: flex;
     justify-content: center;
@@ -54,43 +88,11 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Address  */
-
-.address {
-    margin-top: 20px;
-}
-
-.address-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.address-item + .address-item {
-    margin-top: 9px;
-}
-
-.address a {
-    font-style: normal;
-}
-
-.address-link {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.address-link-white {
-    color: var(--secondary-text-color);
-}
-
-.subscribe {
+// =======Subscribe================
+.footer__subscribe {
     margin-left: 93px;
 }
-.subscribe_text {
+.subscribe__text {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -98,7 +100,7 @@
     margin-bottom: 20px;
 }
 
-.subscribe_label {
+.subscribe__label {
     position: relative;
     display: flex;
     width: 570px;
@@ -106,7 +108,7 @@
     height: 50px;
     fill: #ffffff;
 }
-.subscribe_input {
+.subscribe__input {
     border-radius: 4px;
     background-color: transparent;
     padding: 15px 16px;
@@ -122,7 +124,7 @@
     }
 }
 
-.subscribe_button {
+.subscribe__button {
     display: flex;
     align-items: center;
     text-align: center;
@@ -150,6 +152,6 @@
     }
 }
 
-.subscribe_button-icon {
+.subscribe__button-icon {
     margin-left: 15px;
 }

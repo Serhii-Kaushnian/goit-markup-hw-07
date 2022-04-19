@@ -3,7 +3,7 @@
     padding-top: 0;
 }
 
-.ocupation-title {
+.ocupation__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -13,11 +13,11 @@
     color: var(--title-text-color);
 }
 
-.ocupation-item-title {
+.ocupation__item-title {
     position: relative;
 }
 
-.ocupation-link-text {
+.ocupation__link-text {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -38,11 +38,12 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.ocupation-list {
+.ocupation__list {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 
-.ocupation-item-title + .ocupation-item-title {
+.ocupation__item-title + .ocupation__item-title {
     margin-left: 30px;
 }

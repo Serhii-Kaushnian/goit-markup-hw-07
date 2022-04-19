@@ -1,14 +1,14 @@
 /* Advantages section  */
 
-.advantages-list {
+.advantages__list {
     display: flex;
 }
 
-.advantages-item + .advantages-item {
+.advantages__item + .advantages__item {
     margin-left: 30px;
 }
 
-.advantages-item-title {
+.advantages__item-title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -18,11 +18,11 @@
 
     color: var(--title-text-color);
 }
-.icon-advantages {
+.icon__advantages {
     width: 70px;
     height: 70px;
 }
-.advantages-icon-container {
+.advantages__icon-container {
     margin-bottom: 30px;
     padding: 25px auto;
     display: flex;
