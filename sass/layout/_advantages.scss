@@ -1,6 +1,6 @@
 /* Advantages section  */
 
-.advantages__list {
+.advantages {
     display: flex;
 }
 
@@ -8,7 +8,7 @@
     margin-left: 30px;
 }
 
-.advantages__item-title {
+.advantages__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -18,13 +18,15 @@
 
     color: var(--title-text-color);
 }
-.icon__advantages {
+.advantages__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 70px;
     height: 70px;
 }
 .advantages__icon-container {
     margin-bottom: 30px;
-    padding: 25px auto;
     display: flex;
     height: 120px;
     background-color: #f5f4fa;

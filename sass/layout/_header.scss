@@ -1,19 +1,14 @@
 /* Styles for main page */
 
-.nav__logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-
+.header__nav a {
     color: var(--title-text-color);
 }
+
 .nav__item {
     position: relative;
 }
 
-.current::after {
+.nav__link--current::after {
     position: absolute;
     bottom: 0;
     content: '';
@@ -22,10 +17,6 @@
     width: 100%;
     border-radius: 2px;
     background-color: var(--accent-color);
-}
-
-.accent {
-    color: var(--accent-color);
 }
 
 .list {
@@ -97,7 +88,7 @@
     align-items: center;
 }
 
-.nav__link.current {
+.nav__link.nav__link--current {
     color: var(--accent-color);
 }
 

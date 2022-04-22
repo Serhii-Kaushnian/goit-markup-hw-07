@@ -4,17 +4,9 @@
     background-color: var(--footer-bg-color);
     padding: 60px 0;
 }
-
-.footer__logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-
+.footer__contacts a {
     color: var(--secondary-text-color);
 }
-
 .footer__contacts {
     flex-grow: 1;
 }
@@ -73,9 +65,6 @@
     display: flex;
     margin-top: 20px;
 }
-.join__list-item + .join__list-item {
-    margin-left: 10px;
-}
 
 .join__list-item {
     font-size: 0;
@@ -86,6 +75,10 @@
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
+
+    & + & {
+        margin-left: 10px;
+    }
 }
 
 // =======Subscribe================
