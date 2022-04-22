@@ -4,7 +4,7 @@
     background-color: var(--footer-bg-color);
     padding: 60px 0;
 }
-.footer__contacts a {
+.footer__contacts > a {
     color: var(--secondary-text-color);
 }
 .footer__contacts {
@@ -45,7 +45,7 @@
     }
 }
 
-.address__link-white {
+.address__link--white {
     color: var(--secondary-text-color);
 }
 // =========Join===============

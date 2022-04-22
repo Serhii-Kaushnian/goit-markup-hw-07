@@ -642,7 +642,7 @@ body {
   padding: 60px 0;
 }
 
-.footer__contacts a {
+.footer__contacts > a {
   color: var(--secondary-text-color);
 }
 
@@ -682,7 +682,7 @@ body {
   color: var(--accent-color);
 }
 
-.address__link-white {
+.address__link--white {
   color: var(--secondary-text-color);
 }
 
