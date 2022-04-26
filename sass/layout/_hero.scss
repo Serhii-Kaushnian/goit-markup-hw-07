@@ -9,19 +9,19 @@
     text-align: center;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/Hero/hero-bg.jpg);
+        url(../../img/hero/progressive-jpeg/hero-bg-lap_1600x600-progressive.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 1600px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 0 15px;
     background-color: var(--footer-bg-color);
 }
 
 .hero__title {
-    width: 696px;
+    max-width: 696px;
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -53,5 +53,61 @@
     &:hover,
     &:focus {
         background-color: #188ce8;
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .hero {
+        background-image: url(../../img/hero/progressive-jpeg/hero-bg-mob_480x400-progressive.jpeg);
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../img/hero/progressive-jpeg/hero-bg-mob_960x800@2x-progressive.jpeg);
+        }
+    }
+}
+@media screen and (min-width: 767.99px) {
+    .hero {
+        background-image: url(../../img/hero/progressive-jpeg/hero-bg-tab_768x400-progressive.jpeg);
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../img/hero/progressive-jpeg/hero-bg-tab_1536x800@2x-progressive.jpeg);
+        }
+    }
+}
+@media screen and (min-width: 1199.99px) {
+    .hero {
+        background-image: url(../../img/hero/progressive-jpeg/hero-bg-lap_1600x600-progressive.jpeg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../img/hero/progressive-jpeg/hero-bg-lap_1600x600@2x-progressive.jpeg);
+        }
+    }
+}
+.hero__container {
+    padding: 0 15px;
+    margin: 0 auto;
+    @media screen and (max-width: 479.99px) {
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: 479.99px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 767.99px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1199.99px) {
+        max-width: 1600px;
     }
 }

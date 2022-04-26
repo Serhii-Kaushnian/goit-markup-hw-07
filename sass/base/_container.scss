@@ -4,5 +4,20 @@
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    box-sizing: content-box;
+
+    @media screen and (max-width: 479.99px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 479.99px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 767.99px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1199.99px) {
+        width: 1200px;
+    }
 }

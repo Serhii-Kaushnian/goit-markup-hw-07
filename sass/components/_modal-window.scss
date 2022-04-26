@@ -43,8 +43,6 @@
     font-size: 0;
     border-radius: 50%;
     cursor: pointer;
-    stroke: black;
-    stroke-opacity: 0.1;
     background-color: white;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -161,8 +159,8 @@
     color: #757575;
 }
 .checkbox_icon {
-    width: 15px;
-    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     border: 2px solid black;
     border-radius: 2px;
 }
@@ -194,6 +192,23 @@
     &:hover,
     &:focus {
         background-color: #188ce8;
+    }
+}
+
+@media screen and (max-width: 1199.99px) {
+    .modal {
+        width: 450px;
+    }
+    .checkbox_span {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 449.99px) {
+    .modal {
+        width: 100%;
+    }
+    .checkbox_span {
+        font-size: 12px;
     }
 }
 

@@ -29,10 +29,14 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
+
+body.modal-open {
+    overflow: hidden;
+}
+
 /* Wrapper */
 .wrapper {
     min-height: 100%;

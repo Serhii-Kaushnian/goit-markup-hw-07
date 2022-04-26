@@ -36,3 +36,9 @@
     color: var(--secondary-text-color);
     background-color: rgba(47, 48, 58, 0.8);
 }
+
+@media screen and (max-width: 1199.99px) {
+    .section--no-padding-top {
+        display: none;
+    }
+}
